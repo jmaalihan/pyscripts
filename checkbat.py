@@ -5,8 +5,9 @@ import os
 
 os.chdir('C:\\Users\\jm\\AppData\\Local\\Programs\\Python\\Python39\\Scripts')
 files = os.listdir('C:\\Users\\jm\\Desktop\\projects\\myscripts')
+#NEED TO CHANGE FILE SPLIT TO ACCOUNT FOR MULTIPLE DOTS USE REGEX
 fileNames = [file.split('.') for file in files]
-target= os.listdir('C:\\Users\\jm\\AppData\\Local\\Programs\\Python\\Python39\\Scripts')
+target= os.listdir('chdir:\\Users\\jm\\AppData\\Local\\Programs\\Python\\Python39\\Scripts')
 
 print(f'Files in project folder: {files}')
 
