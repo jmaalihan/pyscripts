@@ -13,9 +13,9 @@ text = ['doc', 'docx', 'pdf', 'txt', 'odt']
 programs = ['exe']
 file_types = {'images':images, 'audio': audio, 'video': video, 'text':text}
 
-os.chdir('C:\\Users\\jm\\Desktop\\testfolder')
+os.chdir('testfolder')
 cwd = os.getcwd()
-files = os.listdir('C:\\Users\\jm\\Desktop\\testfolder')
+files = os.listdir('...testfolder')
 fileNames = [x.lower() for x in files]
 
 print(f'Files in test folder: {fileNames}')
