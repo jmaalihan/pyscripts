@@ -3,8 +3,8 @@
 
 import os
 
-os.chdir('C:\\Users\\jm\\AppData\\Local\\Programs\\Python\\Python39\\Scripts')
-files = os.listdir('C:\\Users\\jm\\Desktop\\projects\\myscripts')
+os.chdir({path folder})
+files = os.listdir({script folder})
 #NEED TO CHANGE FILE SPLIT TO ACCOUNT FOR MULTIPLE DOTS USE REGEX
 fileNames = [file.split('.') for file in files]
 target= os.listdir('chdir:\\Users\\jm\\AppData\\Local\\Programs\\Python\\Python39\\Scripts')
@@ -21,7 +21,7 @@ for name in fileNames:
 			dog= 'dog'
 			print(f'{batName} does NOT exist, creating bat')
 			newBat = open(batName,'w')
-			newBat.write(f'@py.exe C:\\Users\\jm\\Desktop\\projects\\myscripts\\{name[0]}.py %* \n@pause')
+			newBat.write(f'@py.exe {destinationfolder}{name[0]}.py %* \n@pause')
 			newBat.close()
 
 
