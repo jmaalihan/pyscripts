@@ -9,7 +9,7 @@ if len(sys.argv)<2:
     print('Usage: python mkbat.py [filename.py]')
     sys.exit()
 
-path_dir = 'C:\\Users\\jm\\AppData\\Local\\Programs\\Python\\Python39\\Scripts'
+path_dir = #where your scripts are
 file_name = sys.argv[1]
 bat_name = file_name.split('.')[0] + '.bat'
 bat_path = os.path.join(path_dir,bat_name)
