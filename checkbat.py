@@ -7,7 +7,7 @@ os.chdir({path folder})
 files = os.listdir({script folder})
 #NEED TO CHANGE FILE SPLIT TO ACCOUNT FOR MULTIPLE DOTS USE REGEX
 fileNames = [file.split('.') for file in files]
-target= os.listdir('chdir:\\Users\\jm\\AppData\\Local\\Programs\\Python\\Python39\\Scripts')
+target= os.listdir({stuff})
 
 print(f'Files in project folder: {files}')
 
